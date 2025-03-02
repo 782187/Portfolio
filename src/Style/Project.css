@@ -1,0 +1,86 @@
+.project-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(18, 18, 18, 0.573) !important;
+}
+
+.project-section .card {
+    width: 100%;
+    max-width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: anm2 3s linear infinite alternate-reverse;
+}
+
+@keyframes anm2{
+    from{
+        transform: translateY(20px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+.project-section .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-section .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.project-section .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.project-section .card-text {
+    font-size: 0.9rem;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-section .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .project-section .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-section .card {
+        max-width: 90%;
+        height: auto;
+        border: 1px solid white !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-section .card {
+        height: auto;
+        border: 1px solid white !important;
+    }
+
+    .project-section .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,7 @@
+.skills-section{
+    background-color: rgb(13, 13, 13);
+}
+.classCard:hover{
+    background-color: rgb(228, 241, 252) !important;
+    color: black !important;
+}

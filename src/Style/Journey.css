@@ -1,0 +1,82 @@
+.journey-section{
+    background: rgba(18, 18, 18, 0.573);
+    padding: 40px 0;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.timeline-node {
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.timeline-content {
+    width: 60%;
+    margin: 0 auto;
+    background: rgb(16, 15, 15);
+    border: 1px solid red;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    position: relative;
+    transform: translateY(40px);
+    z-index: 1;
+    box-shadow: 2px 3px 5px rgba(34, 33, 33, 0.771);
+    animation: anm1 2s ease-in-out infinite;
+}
+
+@keyframes anm1{
+    from{
+        border: 1px solid blue;
+    }
+    to{
+        border: 1px solid red;
+    }
+}
+
+.timeline-content:hover {
+    background: aliceblue;
+    color: black;
+    transform: scale(1.03);
+    box-shadow: 2px 3px 5px rgb(184, 180, 180);
+}
+
+.dot {
+    position: absolute;
+    top: 60%;
+    width: 6%;
+    height: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    left: 18%;
+    transform: translateX(-50%);
+    transition: transform 0.4s ease;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 4px;
+    height: 100%;
+    background-color: #f39c12;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 700px){
+    .timeline:before{
+        left: 10%;
+    }
+    .dot{
+        left: 13%;
+    }
+    .timeline-content{
+        width: 70%;
+    }
+}

@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    color: yellow;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 15px;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #83c1dc;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #fff200;
+    transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border-color: #fff;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .nav-link:hover {
+        transform: scale(1);
+        background-color: rgba(0, 234, 255, 0.259);
+    }
+}
